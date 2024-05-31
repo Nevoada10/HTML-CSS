@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CatPhotoApp</title>
+	</head>
+	<body>
+		<main>
+			<h1>CatPhotoApp</h1>
+			<section>
+				<h2>Cat Photos</h2>
+				<p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+				<a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+			</section> <!-- Section is a group of related HTML elements, purely for readability and organization -->
+			<section>
+				<h2>Cat Lists</h2>
+				<h3>Things cats love:</h3>
+				<ul> <!-- ul = unordered list, A.K.A bullet list, marcadores -->
+					<li>cat nip</li> <!-- li = list item, A.K.A. list element, elementos de lista -->
+					<li>laser pointers</li> 
+					<li>lasagna</li>
+				</ul> <!-- ul = unordered list, A.K.A bullet list, marcadores -->
+				<figure> <!-- Figure is an HTML element that contains an image and a caption for the image. -->
+					<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+					<figcaption>Cats <em>love</em> lasagna.</figcaption> 
+				</figure> <!-- Figure is an HTML element that contains an image and a caption for the image. -->
+				<h3>Top 3 things cats hate:</h3>
+				<ol> <!-- ol = ordered list, A.K.A. numbered list, enumerados -->
+					<li>flea treatment</li> <!-- li = list item, A.K.A. list element, elementos de lista -->
+					<li>thunder</li>
+					<li>other cats</li>
+				</ol>
+				<figure>
+					<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+					<figcaption>Cats <strong>hate</strong> other cats.
+					</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>Cat Form</h2>
+				<form action="https://freecatphotoapp.com/submit-cat-photo">
+					<label><input type="radio" name="indoor-outdoor" checked> Indoor</label> <!-- A label is an HTML element that contains a form element. -->
+					<label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+					<input id="loving" type="checkbox" name="personality" value="loving" checked > <label for="loving" checked >Loving</label>
+						<input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+						<input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+					<input type="text" placeholder="cat photo URL" required>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<p> No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+		</footer>	
+	</body>
+</html>         
