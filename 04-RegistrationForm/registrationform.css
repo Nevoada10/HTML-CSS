@@ -2,4 +2,37 @@
     width: 100%;
     height: 100vh;
     margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
 } 
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Head is a container for metadata (data about data) */
+/* Body is a container for HTML content */
+/* Fieldset is a group of related HTML elements, purely for readability and organization */
+/* Label is an HTML element that contains a form element */
+/* [a-z0-9]{8,} - 8 ou mais letras e/ou números de 1 a 9 */
+
+
+/*
+<label for="name"><b>Name</b></label>
+<input type="text" name="name" id="name" placeholder="Enter Name" required>
+<label for="email"><b>Email</b></label>
+<input type="text" name="email" id="email" placeholder="Enter Email" required>
+<label for="psw"><b>Password</b></label>
+<input type="password" name="psw" id="psw" placeholder="Enter Password" required>
+<label for="psw-repeat"><b>Repeat Password</b></label>
+<input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat Password" required>
+<hr>
+<button type="submit" class="registerbtn">Register</button>
+</form>
+<div class="signin">
+<p>Already have an account? <a href="#">Sign in</a>.</p>
+</div> 
+</body>
+</html>
+
