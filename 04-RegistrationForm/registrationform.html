@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="registrationform.css">
-</head>
-<body> 
-    <h1>Registration Form</h1>
-    <p>Please fill in this form with the required information</p>
-    <hr>
-    <form action="https://register-demo.freecodecamp.org'" method="post">
-        <fieldset> 
-            <label for="first-name">
-                Enter your First Name:
-                <input type="text" id="first-name" name="firstName" required>
-            </label> 
-            <label for="last-name">
-                Enter your Last Name:
-                <input type="text" id="last-name" name="lastName" required>
-            </label>
-            <label for="email">
-                Enter your Email:
-                <input type="email" id="email" name="email" required>
-            </label>
-            <label for="new-password">
-                Create a New Password:
-                <input type="password" id="new-password" name="password" pattern="[a-z0-9]{8,}" required> 
-            </label>
-            <label><input type="radio" name="accountType" value="personal" checked> Personal</label>
-            <label><input type="radio" name="accountType" value="business"> Business</label>
-        </fieldset>
-
-        <input type="submit" value="Submit" />
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <title>Registration Form</title> 
+        <link rel="stylesheet" href="registrationform.css">
+    </head>  
+    <body> 
+        <h1>Registration Form</h1>
+        <p>Please fill in this form with the required information</p>
+        <hr>
+        <form action="https://register-demo.freecodecamp.org" method="post">
+            <fieldset> 
+                <label for="first-name">
+                    Enter your First Name:
+                    <input type="text" id="first-name" name="firstName" required>
+                </label> 
+                <label for="last-name">
+                    Enter your Last Name:
+                    <input type="text" id="last-name" name="lastName" required>
+                </label>
+                <label for="email">
+                    Enter your Email:
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="new-password">
+                    Create a New Password:
+                    <input type="password" id="new-password" name="password" pattern="[a-z0-9]{8,}" required> 
+            </fieldset>
+                </label>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <label for="personal-account"><input type="radio" name="accountType" id="personal-account" value="personal" checked> Personal</label>
+                <label for="business-account"><input type="radio" name="accountType" id="business-account" value="business"> Business</label>
+                <label for="hearing-about-us">
+                    How did you hear about us?
+                    <select id="hearing-about-us" name="hearingAboutUs">
+                        <option>(select one)</option>
+                        <option>freeCodeCamp News</option>
+                        <option>freeCodeCamp YouTube Channel</option>
+                        <option>freeCodeCamp Forum</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+            </fieldset>
+                <label> Upload a profile picture:<input type="file" id="profile-picture" name="profilePicture" accept="image/*" required></label>
+                <label>Input your age (years): <input type="number" min="13" max="120"></label>
+            <fieldset>
+                <legend>Terms and conditions</legend>
+                <label for="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+        </body>
+</html>
 
