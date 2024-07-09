@@ -1,14 +1,96 @@
+/* CSS styles for the registration form */
+
+/* Styles for the body of the webpage */
 .body {
+    /* Width of the body is 100% of the viewport width */
     width: 100%;
+    /* Height of the body is 100% of the viewport height */
     height: 100vh;
+    /* Remove any default margin on the body */
     margin: 0;
+    /* Background color of the body */
     background-color: #1b1b32;
+    /* Text color of the body */
     color: #f5f6f7;
+    /* Font family for the body */
+    font-family: Tahoma;
+    /* Font size for the body */
+    font-size: 16px;
 } 
 
+/* Styles for the h1 and p elements */
+h1, p {
+    /* Center the text horizontally */
+    text-align: center;
+    /* Add some margin to the top and bottom of the elements */
+    margin: 1em auto;
+}
+
+/* Styles for the form element */
+form {
+    /* Set the width of the form to 60% of the viewport width */
+    width: 60vw; 
+    /* Set the maximum width of the form to 500px */
+    max-width: 500px;
+    /* Set the minimum width of the form to 300px */
+    min-width: 300px;
+    /* Center the form horizontally */
+    margin: 0 auto;
+    /* Add some padding to the bottom of the form */
+    padding-bottom: 2em; 
+}
+
+/* Styles for the fieldset element */
+fieldset {
+    /* Remove the border around the fieldset */
+    border: none; 
+    /* Add some padding to the top and bottom of the fieldset */
+    padding: 2rem 0; 
+    /* Add a bottom border to the fieldset */
+    border-bottom: 3px solid #3b3b4f;
+}
+
+/* Styles for the last fieldset element */
+fieldset:last-of-type {
+    /* Remove the bottom border from the last fieldset */
+    border-bottom: none;
+}
+
+/* Styles for the label element */
 label {
+    /* Display the label as a block element */
     display: block;
+    /* Add some margin to the top and bottom of the label */
     margin: 0.5rem 0;
+}
+
+/* Styles for the input, textarea, and select elements */
+input, textarea, select {
+    /* Set the width of the elements to 100% of their container */
+    width: 100%;
+    /* Add some margin to the top of the elements */
+    margin-top: 10px;
+    /* Remove any margin on the right side of the elements */
+    margin-right: 0;
+    /* Remove any margin on the bottom side of the elements */
+    margin-bottom: 0;
+    /* Remove any margin on the left side of the elements */
+    margin-left: 0;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+}
+
+/* Styles for the elements with the inline class */
+.inline {
+    /* Remove the width of the elements */
+    width: unset;
+    margin: 0;
+    margin-right: 0.5em;
+    /* Align the elements vertically */
+    vertical-align: middle;
 }
 
 /* 
@@ -22,23 +104,3 @@ Select is an HTML element that allows users to select an answer from a list of v
 [a-z0-9]{8,} - 8 or more letters and/or numbers between 1 to 9 
 
 */
-
-
-/*
-<label for="name"><b>Name</b></label>
-<input type="text" name="name" id="name" placeholder="Enter Name" required>
-<label for="email"><b>Email</b></label>
-<input type="text" name="email" id="email" placeholder="Enter Email" required>
-<label for="psw"><b>Password</b></label>
-<input type="password" name="psw" id="psw" placeholder="Enter Password" required>
-<label for="psw-repeat"><b>Repeat Password</b></label>
-<input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat Password" required>
-<hr>
-<button type="submit" class="registerbtn">Register</button>
-</form>
-<div class="signin">
-<p>Already have an account? <a href="#">Sign in</a>.</p>
-</div> 
-</body>
-</html>
-

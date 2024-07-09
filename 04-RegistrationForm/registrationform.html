@@ -18,63 +18,62 @@
             The form fields include labels for each input field, and each input field has an id and name attribute to identify the field when the form is submitted.
             The password field also has a pattern attribute to enforce a specific format for the password.-->
 
-        <form action="https://register-demo.freecodecamp.org" method="post"> <!-- Submitting the form to the specified action -->
+            <form action="https://register-demo.freecodecamp.org" method="post"> <!-- Submitting the form to the specified action -->
             
-            <fieldset> <!-- A fieldset is a group of related HTML elements, purely for readability and organization -->
-                <!-- Fieldset for the personal information -->
-                <label for="first-name"> <!-- Label for the first name input -->
-                    Enter your First Name: <!-- Instructions to the user -->
-                    <input type="text" id="first-name" name="firstName" required> <!-- Input field for the first name, required -->
-                </label> 
-                <label for="last-name"> <!-- Label for the last name input -->
-                    Enter your Last Name: <!-- Instructions to the user -->
-                    <input type="text" id="last-name" name="lastName" required> <!-- Input field for the last name, required -->
-                </label>
-                <label for="email"> <!-- Label for the email input -->
-                    Enter your Email: <!-- Instructions to the user -->
-                    <input type="email" id="email" name="email" required> <!-- Input field for the email, required -->
-                </label>
-                <label for="new-password"> <!-- Label for the password input -->
-                    Create a New Password: <!-- Instructions to the user -->
-                    <input type="password" id="new-password" name="password" pattern="[a-z0-9]{8,}" required> <!-- Input field for the password, required and with a pattern -->
-                </label>
-            </fieldset>
+                <fieldset> <!-- A fieldset is a group of related HTML elements, purely for readability and organization -->
+                    <!-- Fieldset for the personal information -->
+                    <label for="first-name"> <!-- Label for the first name input -->
+                        Enter your First Name: <!-- Instructions to the user -->
+                        <input type="text" id="first-name" name="first_name" required> <!-- Input field for the first name, required -->
+                    </label> 
+                    <label for="last-name"> <!-- Label for the last name input -->
+                        Enter your Last Name: <!-- Instructions to the user -->
+                        <input type="text" id="last-name" name="last_name" required> <!-- Input field for the last name, required -->
+                    </label>
+                    <label for="email"> <!-- Label for the email input -->
+                        Enter your Email: <!-- Instructions to the user -->
+                        <input type="email" id="email" name="email_address" required> <!-- Input field for the email, required -->
+                    </label>
+                    <label for="new-password"> <!-- Label for the password input -->
+                        Create a New Password: <!-- Instructions to the user -->
+                        <input type="password" id="new-password" name="new_password" pattern="[a-z0-9]{8,}" required> <!-- Input field for the password, required and with a pattern -->
+                    </label>
+                </fieldset>
 
-            <!-- 2) This code snippet represents a fieldset containing radio buttons for selecting the account type, with options for "Personal" and "Business."
-            The radio buttons have unique IDs, values, and are used to select one option from a group.-->
+                <!-- 2) This code snippet represents a fieldset containing radio buttons for selecting the account type, with options for "Personal" and "Business."
+                The radio buttons have unique IDs, values, and are used to select one option from a group.-->
 
-            <fieldset>
-                <!-- Fieldset for the account type -->
-                <legend>Account type (required)</legend> <!-- Legend for the fieldset -->
-                <label for="personal-account"><input type="radio" name="accountType" id="personal-account" value="personal" checked> Personal</label> <!-- Radio button for the personal account -->
-                <label for="business-account"><input type="radio" name="accountType" id="business-account" value="business"> Business</label> <!-- Radio button for the business account -->
-            </fieldset>
-            
-            <!-- 3) This code snippet represents a form with various input fields for additional information. It includes fields for uploading a profile picture, 
-            inputting age, selecting how the user heard about a service, providing a bio, and accepting terms and conditions.-->
-            
-            <fieldset>
-                <!-- Fieldset for the additional information -->
-                <label> Upload a profile picture:<input type="file" id="profile-picture" name="profilePicture" accept="image/*" required></label> <!-- Input field for the profile picture, required and with a file type -->
-                <label>Input your age (years): <input type="number" min="13" max="120"></label> <!-- Input field for the age, with min and max values -->
-                <label for="hearing-about-us"> How did you hear about us?
-                    <select id="hearing-about-us" name="hearingAboutUs">
-                        <option value="">(select one)</option> <!-- Option for selecting one -->
-                        <option value="1">freeCodeCamp News</option> <!-- Options for the different ways of hearing about us -->
-                        <option value="2">freeCodeCamp YouTube Channel</option>
-                        <option value="3">freeCodeCamp Forum</option>
-                        <option value="4">Other</option>
-                    </select>
-                </label>
-                <label>Provide a bio:
-                    <textarea></textarea>
-                </label> <!-- Text area for providing a bio -->
-                <legend>Terms and conditions</legend> <!-- Legend for the fieldset -->
-                <label for="terms-and-conditions">
-                    <input id="terms-and-conditions" type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
-                </label> <!-- Checkbox for accepting the terms and conditions -->
-            </fieldset>
+                <fieldset>
+                    <!-- Fieldset for the account type -->
+                    <legend>Account type (required)</legend> <!-- Legend for the fieldset -->
+                    <label for="personal-account"><input type="radio" name="account_type" id="personal-account" value="personal" class="inline" checked> Personal</label> <!-- Radio button for the personal account -->
+                    <label for="business-account"><input type="radio" name="account_type" id="business-account" value="business" class="inline"> Business</label> <!-- Radio button for the business account -->
+                </fieldset>
+                
+                <!-- 3) This code snippet represents a form with various input fields for additional information. It includes fields for uploading a profile picture, 
+                inputting age, selecting how the user heard about a service, providing a bio, and accepting terms and conditions.-->
 
+                <fieldset>
+                    <!-- Fieldset for the additional information -->
+                    <label for="profile-picture"> Upload a profile picture:<input type="file" id="profile-picture" name="profile_picture" accept="image/*" required></label> <!-- Link the input field to its label -->
+                    <label for="age">Input your Age (Years): <input type="number" min="13" max="120" id="age" name="age"></label> <!-- Link the input field to its label -->
+                    <label for="referrer"> How did you hear about us?
+                        <select id="referrer" name="referrer">
+                            <option value="">(select one)</option> <!-- Option for selecting one -->
+                            <option value="1">freeCodeCamp News</option> <!-- Options for the different ways of hearing about us -->
+                            <option value="2">freeCodeCamp YouTube Channel</option>
+                            <option value="3">freeCodeCamp Forum</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </label>
+                    <label for="bio">Provide a bio:
+                        <textarea id="bio" rows="3" cols="30" name="bio" placeholder="I like coding on the beach..."></textarea> <!-- Link the text area to its label and set its initial size -->
+                    </label>
+                    <legend>Terms and conditions</legend> <!-- Legend for the fieldset -->
+                    <label for="terms-and-conditions">
+                        <input id="terms-and-conditions" type="checkbox" name="terms_and_conditions" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
+                    </label> 
+                </fieldset>
 
             <input type="submit" value="Submit"> <!-- Submit button -->
         </form>
