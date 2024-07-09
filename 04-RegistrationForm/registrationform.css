@@ -37,7 +37,7 @@ form {
     /* Center the form horizontally */
     margin: 0 auto;
     /* Add some padding to the bottom of the form */
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
 }
 
 /* Styles for the fieldset element */
@@ -99,7 +99,21 @@ input, textarea {
 input[type="submit"] {
     display: block;
     width: 60%;
-    margin: 0 auto;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;  /* REM is short for Root EM, that means the font size will be 1.1 times the root font size regardless of the size 
+    of the screen or the size of the viewport  */
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a[href="https://www.freecodecamp.org/news/terms-of-service/"] {
+    color: #dfdfe2;
 }
 
 /* 
