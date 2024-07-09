@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
 /* CSS styles for the registration form */
 
 /* Styles for the body of the webpage */
 .body {
     /* Width of the body is 100% of the viewport width */
+=======
+a
+
+body {
+>>>>>>> Stashed changes
     width: 100%;
     /* Height of the body is 100% of the viewport height */
     height: 100vh;
@@ -110,6 +116,7 @@ input[type="submit"] {
 
 input[type="file"] {
     padding: 1px 2px;
+<<<<<<< Updated upstream
 }
 
 a[href="https://www.freecodecamp.org/news/terms-of-service/"] {
@@ -127,3 +134,14 @@ Select is an HTML element that allows users to select an answer from a list of v
 [a-z0-9]{8,} - 8 or more letters and/or numbers between 1 to 9 
 
 */
+=======
+  }
+  
+  .inline{
+    display: inline; 
+  }
+  
+  a[href="https://www.freecodecamp.org/news/terms-of-service/"] {
+      color: #dfdfe2;
+  }
+>>>>>>> Stashed changes
