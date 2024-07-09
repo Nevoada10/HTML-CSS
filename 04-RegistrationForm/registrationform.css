@@ -76,11 +76,14 @@ input, textarea, select {
     margin-bottom: 0;
     /* Remove any margin on the left side of the elements */
     margin-left: 0;
+    min-height: 2em;
+
 }
 
 input, textarea {
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
+    color: #ffffff; 
 }
 
 /* Styles for the elements with the inline class */
@@ -91,6 +94,12 @@ input, textarea {
     margin-right: 0.5em;
     /* Align the elements vertically */
     vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* 
