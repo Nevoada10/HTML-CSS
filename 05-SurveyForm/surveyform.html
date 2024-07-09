@@ -15,20 +15,65 @@
         <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
 
             <fieldset>
-                <legend>Personal Information</legend>
+                <legend>Basic Information</legend>
                 <label for="name" id="name-label" >
-                    Enter your name:<input id="name" type="text" required>
+                    Enter your name:<input id="name" type="text" placeholder="Enter your name" required name="name">
                 </label>
                 <label for="email" id="email-label" >
-                    Enter your email:<input id="email" type="email" required>
+                    Enter your email:<input id="email" type="email" placeholder="Enter your Email" required>
                 </label>
                 <label for="number" id="number-label"> 
-                    Enter your number:<input id="number" type="number" min="18" max="120" required>
+                    Enter your number:<input id="number" type="number" min="18" max="120" placeholder="Enter your age" required>
                 </label>               
             </fieldset>
 
 
+            <fieldset>  
+              
+                <label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="">Option 1</option>
+                        <option value="1">Option 2</option>
+                    </select>
+                </label>
+            </fieldset>
 
+
+            <fieldset>
+                <legend>Gender Information:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+
+                
+                
+
+            </fieldset>
+        </form>
     </body>
 </html>
 
+<!--
+  HTML is the root element of an HTML document.
+  Head is a container for metadata (data about data) 
+  Body is a container for HTML content 
+  Form is a big container for form elements
+  Label is a smaller container for form elements
+  Input is a form element
+  Select is a form element
+  Option is a form element
+  Textarea is a form element
+  Radio is a form element
+  Checkbox is a form element
+  File is a form element
+  Button is a form element
+  Link is a form element
+  Submit is a form element
+  Text is a form element
+
+  ID attribute uniquely identifies the input field.
+  Name attribute specifies the variable that will be sent to the server when the form is submitted, this also link different input fieds, allowing only one input field to be selected
+  Value attribute specifies the value of the variable that will be sent to the server when the form is submitted.
+  Required attribute specifies that the input field must be filled
+  Min and Max attributes specify the minimum and maximum value of the input field
+  Placeholder attribute specifies a short hint that describes the expected value of an input field
+  -->
