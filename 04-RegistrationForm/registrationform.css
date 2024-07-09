@@ -102,3 +102,13 @@ a[href="https://www.freecodecamp.org/news/terms-of-service/"] {
   }
   
 
+/* 
+Html is the root element of an HTML document.
+Head is a container for metadata (data about data) 
+Body is a container for HTML content 
+Fieldset is a group of related HTML elements, purely for readability and organization 
+Label is an HTML element that contains a form element 
+Legend is an HTML element that explains to the reader what the fieldset element is for
+Select is an HTML element that allows users to select an answer from a list of values
+[a-z0-9]{8,} - 8 or more letters and/or numbers between 1 to 9 
+*/
