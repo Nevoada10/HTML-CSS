@@ -43,11 +43,19 @@
                 <legend>Gender Information:</legend>
                     <label><input type="radio" name="gender" value="male" required> Male</label>
                     <label><input type="radio" name="gender" value="female" required> Female</label>
-
-                
-                
-
             </fieldset>
+
+            <fieldset>
+                <legend>Favorite Music Genres:</legend>
+                <label><input type="checkbox" name="Rock" id="checkbox" value="Jazz"> I like Rock n Roll.</label>
+                <label><input type="checkbox" name="Jazz" id="checkbox" value="Jazz"> I like Jazz.</label>
+                <label for="othergenres">Other genres:</label> <textarea id="othergenres" name="comments" rows="4" cols="50" placeholder="Enter other genres here" required></textarea>
+            </fieldset>
+
+
+
+
+
         </form>
     </body>
 </html>
@@ -70,7 +78,7 @@
   Submit is a form element
   Text is a form element
 
-  ID attribute uniquely identifies the input field.
+  ID attribute uniquely identifies the field, this is used to style specific elements using CSS.
   Name attribute specifies the variable that will be sent to the server when the form is submitted, this also link different input fieds, allowing only one input field to be selected
   Value attribute specifies the value of the variable that will be sent to the server when the form is submitted.
   Required attribute specifies that the input field must be filled
