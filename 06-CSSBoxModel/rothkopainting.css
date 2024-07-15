@@ -21,8 +21,9 @@ OVERFLOW - is used to control how content overflows the box:
     Overflow auto will add scrollbars if necessary.
     Overflow initial will set the property to the initial/default value.
     Overflow inherit will inherit the overflow from the parent.
-
 BOX-SHADOW - is used to add shadows to elements.
+FILTER - is used to control how an element is blurred.
+TRANSFORM - is used to control how an element is transformed.
 */
 
 .canvas {
@@ -48,6 +49,7 @@ BOX-SHADOW - is used to add shadows to elements.
     background-color: #efb762;
     margin: 20px auto;
     box-shadow: 0 0 3px 3px #efb762; /* Increase the area and soften the edges */
+    transform: rotate(-0.6deg);
 }
 
 .two {
@@ -56,7 +58,8 @@ BOX-SHADOW - is used to add shadows to elements.
     background-color: #8f0401;
     margin: 0 auto 20px; /* top, horizontal margin, bottom */
     box-shadow: 0 0 3px 3px #8f0401; /* Increase the area and soften the edges with a different color */
-    border-radius: 9px;
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
 }
 
 .one, .two {
@@ -70,4 +73,6 @@ BOX-SHADOW - is used to add shadows to elements.
     margin: auto;
     filter: blur(2px);
     box-shadow: 0 0 5px 5px #b20403; /* Add a box-shadow with the specified values */
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
 }
