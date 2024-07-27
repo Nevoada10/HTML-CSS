@@ -14,7 +14,7 @@ body {
     border: 2px solid black;
     width: 270px;
     margin: 20px auto;
-     padding: 0 7px;
+    padding: 0 7px;
 }
 
 header h1 {
@@ -77,6 +77,10 @@ header h1 {
       font-weight: 700;
   }
 
+.right-container {
+  font-size: 20px;
+}
+
 .right {
   justify-content: flex-end;
 }
@@ -92,3 +96,11 @@ header h1 {
 .daily-value p:not(.no-divider) {
   border-bottom: 1px solid #888989;
 }
+
+.note {
+  font-size: 0.6rem;
+  padding: 0 8px;
+  margin: 5px 0;
+  text-indent: -8px;
+}
+
