@@ -15,11 +15,7 @@ body {
     width: 270px;
     margin: 20px auto;
      padding: 0 7px;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
 }
-
 
 header h1 {
     text-align: center;
@@ -52,6 +48,10 @@ header h1 {
     border: 0;
   }
 
+  .medium {
+    height: 5px;
+  }
+
   .small-text {
     font-size: 0.85rem;
   }
@@ -76,3 +76,15 @@ header h1 {
       font-size: 2.4em;
       font-weight: 700;
   }
+
+.right {
+  justify-content: flex-end;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.daily-value p {
+  border-bottom: 1px solid #888989;
+}
