@@ -51,30 +51,68 @@ Author: Mevoada ( https://github.com/Nevoada10 )
                 <input type="date" name="birth-date" id="birth-date" />
             </div>
 
-        </section>
+        </section> <!-- End of Section 1 -->
 
-        <section role="region" aria-labelledby="html-questions">
+        <section role="region" aria-labelledby="html-questions"> <!-- Section 2: HTML Questions -->
 
             <h2 id="html-questions">HTML Questions</h2>
-            <label for="question-2-answers">
-                What is the correct way to reference an external stylesheet?
-                <input type="text" id="question-2-answers" name="q2" />
-            </label>
 
-        </section>
-        <section role="region" aria-labelledby="css-questions">
+            <div class="question-block"> <!-- Question 1 -->
+                <h3>1</h3>
+                <fieldset class="question" name="q1">
+                    <legend>Is the HTML &lt;main&gt; element still supported?</legend>
+                    <ul class="answers-list">
+                        <li>
+                            <label for="q1-a1">
+                                <input type="radio" id="q1-a1" name="q1" value="true">
+                                True
+                            </label>
+                        </li>
+                        <li>
+                            <label for="q1-a2">
+                                <input type="radio" id="q1-a2" name="q1" value="false">
+                                False
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="question-block"> <!-- Question 2 -->
+                <h3>2</h3>
+                <fieldset class="question" name="q2">
+                    <legend>Is the CSS &lt;after&gt; pseudo-element supported?</legend>
+                    <ul class="answers-list">
+                        <li>
+                            <label for="q2-a1">
+                                <input type="radio" id="q2-a1" name="q2" value="true">
+                                True
+                            </label>
+                        </li>
+                        <li>
+                            <label for="q2-a2" >
+                                <input type="radio" id="q2-a2" name="q2" value="false">
+                                False
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            
+        </section> <!-- End of Section 2 -->
+
+        
+        <section role="region" aria-labelledby="css-questions"> <!-- Section 3: CSS Questions -->
+
             <h2 id="css-questions">CSS Questions</h2>
             <label for="question-3-answers">
                 What is the alt attribute used for?
                 <input type="text" id="question-3-answers" name="q3" />
             </label>
-        </section>
+
+        </section> <!-- End of Section 3 -->
+
         <button type="submit">Submit</button>
     </form>
 </main>
-
-
-
-
 </body>
 </html>
