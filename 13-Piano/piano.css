@@ -1,0 +1,17 @@
+/*
+================================================================================
+Piano CSS (Responsive Web Design)
+Author: Mevoada ( https://github.com/Nevoada10 )
+Year: 2024
+================================================================================
+*/
+
+html {
+    box-sizing: border-box; 
+    /* The box-sizing property in CSS controls how the width and height of an element are calculated. By default, the box-sizing property is set to content-box, which means that the width and height of an element include only the content of the element, without padding or border. However, when you set box-sizing to border-box, the width and height of an element include the content, padding, and border, but not the margin. 
+    This means that the total width and height of an element is the sum of its content, padding, and border. */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
