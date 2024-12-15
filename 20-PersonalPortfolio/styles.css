@@ -23,7 +23,7 @@ body {
 header {
     width: 100%;
     background: var(--white);
-    padding: 1rem;
+    padding: 1vw;
 }
 
 #navbar {
@@ -32,9 +32,9 @@ header {
     left: 0;
     width: 100%;
     background: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0.2vw 0.5vw rgba(0,0,0,0.1);
     z-index: 1000;
-    padding: 1rem;
+    padding: 1vw;
     display: flex;
     justify-content: center;
 }
@@ -42,7 +42,7 @@ header {
 #navbar ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 #navbar a {
@@ -58,39 +58,39 @@ header {
 
 /* Welcome Section */
 #welcome-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg, var(--main-blue), var(--accent-blue));
     color: var(--white);
-    padding-top: 60px;
+    padding: 10vh 5vw;
+    gap: 2vh;
 }
 
 #welcome-section img:first-of-type {
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin: 2vh 0;
     transition: transform 0.3s;
-}
-
-#welcome-section img:first-of-type:hover {
-    transform: scale(1.1);
 }
 
 #welcome-section img:last-of-type {
     width: 20vw;
     height: 20vw;
+    border-radius: 1vw;
+    object-fit: cover;
+    box-shadow: 0 0.2vw 1vw rgba(0,0,0,0.1);
 }
 
 .stats-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-left: -10rem;
+    gap: 2vw;
+    margin-top: 2vw;
+    margin-left: 0vw;
 }
 
 .stats-text {
@@ -98,59 +98,60 @@ header {
 }
 
 #welcome-section h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3vw;
+    margin-bottom: 1vw;
 }
 
 /* Projects Section */
 #projects {
-    padding: 5rem 2rem;
+    padding: 5vw 2vw;
     background: var(--white);
 }
 
 #projects h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
+    font-size: 2.5vw;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    gap: 2vw;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
 .project-tile {
     background: var(--white);
-    border-radius: 8px;
+    border-radius: 0.5vw;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0.2vw 0.5vw rgba(0,0,0,0.1);
     text-decoration: none;
     color: var(--text-color);
     transition: transform 0.3s;
 }
 
 .project-tile:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5vw);
 }
 
 .project-tile img {
     width: 100%;
-    height: 300px;
+    height: 20vw;
     object-fit: cover;
 }
 
 .project-title {
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 1vw;
+    font-size: 1.2vw;
     font-weight: 500;
     text-align: center;
 }
 
 /* Contact Section */
 #contact-info {
-    padding: 5rem 2rem;
+    padding: 5vw 2vw;
     background: var(--main-blue);
     text-align: center;
 }
@@ -159,14 +160,14 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 2vw;
+    margin-top: 2vw;
 }
 
 .contact-links a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     transition: color 0.3s;
 }
 
@@ -177,7 +178,7 @@ header {
 /* Media Queries */
 @media (max-width: 768px) {
     #welcome-section h1 {
-        font-size: 2rem;
+        font-size: 4vw;
     }
     
     .contact-links {
@@ -187,19 +188,33 @@ header {
     #navbar ul {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5vw;
+    }
+
+    .project-title {
+        font-size: 2vw;
+    }
+
+    .contact-links a {
+        font-size: 2vw;
     }
 }
 
 @media (max-width: 480px) {
-    /* Adjust the size of the image in the welcome section for smaller screens */
     #welcome-section img:first-of-type {
-        width: 200px; /* Set the width of the image to 200 pixels */
-        height: 200px; /* Set the height of the image to 200 pixels */
+        width: 40vw;
+        height: 40vw;
     }
     
-    /* Change the font size of the header's h1 element for smaller screens */
-    header h1 {
-        font-size: 1.5rem; /* Set the font size of the h1 to 1.5 rem units */
+    #welcome-section h1 {
+        font-size: 6vw;
+    }
+
+    .project-title {
+        font-size: 3vw;
+    }
+
+    .contact-links a {
+        font-size: 3vw;
     }
 }
