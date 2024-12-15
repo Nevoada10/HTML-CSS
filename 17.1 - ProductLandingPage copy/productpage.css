@@ -22,7 +22,7 @@ body {
 #header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     min-height: 75px;
     padding: 0 20px;
     display: flex;
@@ -30,6 +30,7 @@ body {
     align-items: center;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 .logo-container {
