@@ -20,41 +20,95 @@ This document is a basic HTML template for a technical documentation page.
 
     <body>
 
+        <nav id="navbar">
+            <header>HTML and CSS Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Setup">Setup</a></li>
+                <li><a class="nav-link" href="#Usage">Usage</a></li>
+                <li><a class="nav-link" href="#Features">Features</a></li>
+                <li><a class="nav-link" href="#HTML">HTML</a></li>
+                <li><a class="nav-link" href="#CSS">CSS</a></li>
+            </ul>
+        </nav>
+
         <main id="main-doc">
             
             <section class="main-section" id="Introduction">
             <header>
-                <h2>Introduction</h2>
+                <header>Introduction</header>
             </header>
-            <p>This section provides an overview of the technical documentation.</p>
+            <p>
+                HTML (HyperText Markup Language) is the standard markup language used to create and structure content on the web. 
+                It provides the basic structure of web pages, which is enhanced and modified by other technologies like CSS.
+            </p>
+            <p>
+                CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. 
+                CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+            </p>
             </section>
 
             <section class="main-section" id="Setup">
             <header>
-                <h2>Setup</h2>
+                <header>Setup</header>
             </header>
-            <p>This section explains how to set up the environment.</p>
+            <p>
+                To start with HTML and CSS, you need a simple text editor and a web browser. Popular choices include Visual Studio Code, 
+                Sublime Text, or Atom. These editors provide helpful features like syntax highlighting and auto-completion.
+            </p>
+            <p>
+                Modern web browsers come with built-in developer tools that allow you to inspect and debug your HTML and CSS code. 
+                These tools are essential for web development and can be accessed by right-clicking and selecting 'Inspect' or pressing F12.
+            </p>
             </section>
 
             <section class="main-section" id="Usage">
             <header>
-                <h2>Usage</h2>
+                <header>Usage</header>
             </header>
-            <p>This section describes how to use the software.</p>
+            <p>
+                HTML elements are the building blocks of web pages. They are represented by tags, which label pieces of content such as 
+                "heading", "paragraph", "table", and so on. Most elements have an opening and closing tag.
+            </p>
+            <p>
+                CSS can be applied to HTML elements in three ways: inline (using the style attribute), internal (using the style tag in the HTML file), 
+                or external (linking to a separate CSS file). External CSS is the most maintainable approach for larger projects.
+            </p>
+            <ul>
+                <li>HTML elements must be properly nested, with the most specific element inside the more general one</li>
+                <li>CSS selectors determine which elements the styles will be applied to</li>
+                <li>Classes can be reused across multiple elements while IDs must be unique</li>
+                <li>The CSS Box Model includes content, padding, border, and margin properties</li>
+                <li>Responsive design ensures your website looks good on all device sizes</li>
+            </ul>
             </section>
 
             <section class="main-section" id="Troubleshooting">
             <header>
-                <h2>Troubleshooting</h2>
+                <header>Troubleshooting</header>
             </header>
-            <p>This section provides solutions to common issues.</p>
+            <p>
+                Common HTML issues include incorrect tag nesting, missing closing tags, and improper use of attributes. Using a code validator 
+                like the W3C Markup Validation Service can help identify and fix these problems.
+            </p>
+            <p>
+                CSS troubleshooting often involves dealing with specificity issues, cascading conflicts, and browser compatibility. Browser 
+                developer tools are invaluable for inspecting styles and identifying which CSS rules are being applied or overridden.
+            </p>
             </section>
 
             <section class="main-section" id="Frequently_Asked_Questions">
             <header>
-                <h2>Frequently Asked Questions</h2>
+                <header>Frequently Asked Questions</header>
             </header>
-            <p>This section answers frequently asked questions about the software.</p>
+            <p>
+                One common question is about the difference between HTML5 semantic elements like header, nav, main, and article versus 
+                using generic div elements. Semantic elements provide better structure and accessibility for your web pages.
+            </p>
+            <p>
+                Another frequent question concerns CSS positioning and layout techniques. While traditional methods like float and position 
+                were common, modern approaches like Flexbox and Grid provide more powerful and flexible ways to create responsive layouts.
+            </p>
             </section>
 
         </main>
