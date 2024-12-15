@@ -65,14 +65,36 @@ header {
     align-items: center;
     background: linear-gradient(45deg, var(--main-blue), var(--accent-blue));
     color: var(--white);
-    padding-top: 60px; /* Account for fixed navbar */
+    padding-top: 60px;
 }
 
-#welcome-section img {
-    width: 200px;
-    height: 200px;
+#welcome-section img:first-of-type {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+#welcome-section img:first-of-type:hover {
+    transform: scale(1.1);
+}
+
+#welcome-section img:last-of-type {
+    width: 20vw;
+    height: 20vw;
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: -10rem;
+}
+
+.stats-text {
+    flex: 1;
 }
 
 #welcome-section h1 {
@@ -171,9 +193,9 @@ header {
 
 @media (max-width: 480px) {
     /* Adjust the size of the image in the welcome section for smaller screens */
-    #welcome-section img {
-        width: 150px; /* Set the width of the image to 150 pixels */
-        height: 150px; /* Set the height of the image to 150 pixels */
+    #welcome-section img:first-of-type {
+        width: 200px; /* Set the width of the image to 200 pixels */
+        height: 200px; /* Set the height of the image to 200 pixels */
     }
     
     /* Change the font size of the header's h1 element for smaller screens */
