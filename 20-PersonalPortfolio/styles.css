@@ -1,0 +1,149 @@
+/* Variables */
+:root {
+    --main-blue: #e3f2fd;
+    --accent-blue: #2196f3;
+    --dark-blue: #1976d2;
+    --text-color: #333;
+    --white: #fff;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    background: var(--white);
+    padding: 1rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: var(--accent-blue);
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, var(--main-blue), var(--accent-blue));
+    color: var(--white);
+    padding-top: 60px; /* Account for fixed navbar */
+}
+
+#welcome-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 5rem 2rem;
+    background: var(--white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact-info {
+    padding: 5rem 2rem;
+    background: var(--main-blue);
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: var(--accent-blue);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome-section img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
