@@ -1,6 +1,6 @@
 /*
 ================================================================================
-Product Landing Page CSS (Certificate Project)
+Product Landing Page CSS (Certificate Project 4)
 Author: Nevoada ( https://github.com/Nevoada10 )
 ================================================================================
 */
@@ -278,7 +278,7 @@ We use media queries to apply different styles based on the screen size.
     /* Feature Section Styles */
     .feature {
         flex-direction: column;
-        align-items: center;
+        align-items:    center;
         text-align: center;
     }
 
