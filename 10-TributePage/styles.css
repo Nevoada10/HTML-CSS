@@ -1,4 +1,87 @@
-h1 {
-    text-align: center;
-    font-size: 3vw;
+h1 { 
+  font-size: 4vw;
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  border-radius: 50%;
+  border: 5px solid #cbcbcb;
+}
+
+#img-caption {
+  text-align: left;
+  margin-top: 2.5vw;
+}
+
+#tribute-link {
+  display: block;
+  text-align: center;
+  margin-top: 2vw;
+}
+
+#img-div {
+  background-image: linear-gradient(to top, rgb(15,15,15), rgb(175, 175, 175));
+  padding: 3vw;
+  margin: 1vw;
+  border-radius: 1rem;
+  border: 1px solid #cbcbcb;
+  color: #cbcbcb;
+}
+
+#band-legacy {
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 2vw;
+  margin-top: 2vw;
+  border-radius: 1rem;
+}
+
+#band-legacy h2 {
+  color: #00828b;
+  border-bottom: 2px solid #cbcbcb;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+}
+
+#band-legacy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#band-legacy li {
+  margin-bottom: 1vw;
+  position: relative;
+  padding-left: 20px;
+}
+
+#band-legacy li::before {
+  content: '♪';
+  color: #cbcbcb;
+  position: absolute;
+  left: 0;
+}
+
+
+#tribute-link:link {
+  color: #00828b; /* Teal color that matches the #band-legacy h2 */
+}
+
+#tribute-link:visited {
+  color: #b5b4b4; /* Light gray that matches the body text */
+}
+
+#tribute-link:hover {
+  color: #ffffff; /* Slightly lighter teal for hover effect */
+  text-decoration: underline; /* Add some visual feedback on hover */
+}
+
+body {
+  font-family: system-ui;
+  color: #cbcbcb;
+  font-size: 14px;
+  background-color: #3a3a3b;
+  line-height: 1.5;
 }
