@@ -1,3 +1,12 @@
+<!--
+================================================================================
+Survey Form HTML (Certificate Project 5)
+Author: Nevoada ( https://github.com/Nevoada10 )
+================================================================================
+This file contains the HTML code for a simple survey form with multiple fields.
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,55 +17,68 @@
     </head>
     <body>
         <header>
-            <h1 id="title">Generic Survey Form</h1>
-            <p id="description"> Please fill out this form with the required information </p>
+            <h1 id="title">Tech Career Exploration Survey</h1>
+            <p id="description">Help us understand your technology career goals, interests, and aspirations. Your insights will contribute to personalized career development resources.</p>
         </header>
 
         <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
 
             <fieldset>
-                <legend>Basic Information</legend>
-                <label for="name" id="name-label" >
-                    Enter your name:<input id="name" type="text" placeholder="Enter your name" required name="name">
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">
+                    Full Name:<input id="name" type="text" placeholder="Your full name" required name="name">
                 </label>
-                <label for="email" id="email-label" >
-                    Enter your email:<input id="email" type="email" placeholder="Enter your Email" required>
+                <label for="email" id="email-label">
+                    Email Address:<input id="email" type="email" placeholder="your.email@example.com" required>
                 </label>
                 <label for="number" id="number-label"> 
-                    Enter your number:<input id="number" type="number" min="18" max="120" placeholder="Enter your age" required>
+                    Age:<input id="number" type="number" min="16" max="65" placeholder="Your current age" required>
                 </label>               
             </fieldset>
 
-
             <fieldset>  
-              
-                <label>
-                    <select id="dropdown" name="dropdown">
-                        <option value="">Option 1</option>
-                        <option value="1">Option 2</option>
+                <legend>Career Stage</legend>
+                <label for="dropdown">Current Career Stage:
+                    <select id="dropdown" name="career-stage" required>
+                        <option value="">Select your current stage</option>
+                        <option value="student">Student</option>
+                        <option value="entry-level">Entry-Level Professional</option>
+                        <option value="mid-career">Mid-Career Professional</option>
+                        <option value="career-changer">Career Changer</option>
                     </select>
                 </label>
             </fieldset>
 
-
             <fieldset>
-                <legend>Gender Information:</legend>
-                    <label><input type="radio" name="gender" value="male" required> Male</label>
-                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                <legend>Technology Interests</legend>
+                <p>Select the technology domains that interest you:</p>
+                <label><input type="checkbox" name="interests" value="web-dev"> Web Development</label>
+                <label><input type="checkbox" name="interests" value="ai-ml"> Artificial Intelligence & Machine Learning</label>
+                <label><input type="checkbox" name="interests" value="cybersecurity"> Cybersecurity</label>
+                <label><input type="checkbox" name="interests" value="cloud-computing"> Cloud Computing</label>
+                <label><input type="checkbox" name="interests" value="data-science"> Data Science</label>
             </fieldset>
 
             <fieldset>
-                <legend>Favorite Music Genres:</legend>
-                <label><input type="checkbox" name="Rock" id="checkbox" value="Jazz"> I like Rock n Roll.</label>
-                <label><input type="checkbox" name="Jazz" id="checkbox" value="Jazz"> I like Jazz.</label>
-                <label for="othergenres">Other genres:</label> <textarea id="othergenres" name="comments" rows="4" cols="50" placeholder="Enter other genres here" required></textarea>
+                <legend>Career Goals</legend>
+                <p>What is your primary career goal in technology?</p>
+                <label><input type="radio" name="career-goal" value="startup" required> Launch a Tech Startup</label>
+                <label><input type="radio" name="career-goal" value="corporate" required> Advance in Corporate Tech Roles</label>
+                <label><input type="radio" name="career-goal" value="freelance" required> Become a Freelance Tech Professional</label>
+                <label><input type="radio" name="career-goal" value="research" required> Pursue Tech Research</label>
             </fieldset>
-        
-            <input type="submit" id="submit" value="Submit">
+
+            <fieldset>
+                <legend>Additional Insights</legend>
+                <label for="challenges">What challenges are you facing in your tech career journey?
+                    <textarea id="challenges" name="challenges" rows="4" placeholder="Share your thoughts..."></textarea>
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Survey</button>
         </form>
     </body>
 </html>
-
 <!--
   HTML is the root element of an HTML document.
   Head is a container for metadata (data about data) 
