@@ -123,7 +123,7 @@ input[type="radio"] {
     margin-right: 0.5rem;
 }
 
-button[type="submit"] {
+input[type="submit"] {
     width: 100%;
     padding: 0.75rem;
     background-color: var(--secondary-color);
@@ -136,7 +136,7 @@ button[type="submit"] {
     margin-top: 1rem;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: var(--accent-color);
 }
 
@@ -160,6 +160,6 @@ input:required {
     100% { transform: scale(1); }
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
     animation: pulse 0.5s ease-in-out;
 }
