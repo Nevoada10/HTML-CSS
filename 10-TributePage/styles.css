@@ -36,7 +36,9 @@ body {
     filter: grayscale(70%) contrast(120%);
     transition: all 0.3s ease;
     border-radius: 10px;
-    max-width: 99%; /* prevents image from overflowing the size of it's container */
+    display: block;
+    max-width: 100%; /* prevents image from overflowing the size of it's container */
+    margin-bottom: 1rem;
 }
 
 #image:hover {
@@ -50,19 +52,19 @@ body {
 }
 
 #tribute-link {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    width: fit-content;
-    color: var(--grunge-accent);
-}
-#tribute-link:hover {
-  color: #ff6666;
-  background-color: rgba(139, 0, 0, 0.2);
-  transform: scale(1.05);
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  width: fit-content;
+  color: var(--grunge-accent);
 }
 
 #tribute-link:visited {
-  color: #5c0000;
+  color: rgb(92, 0, 0);
   opacity: 0.8;
+}
+
+#tribute-link:hover {
+  color: #ef4747;
+  transform: scale(1.05);
 }

@@ -13,28 +13,35 @@ Author: Nevoada ( https://github.com/Nevoada10 )
 }
 
 body {
-    background-color: #f6f6f6;
+    padding-top: 100px;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f6f6f6;
 }
 
 /* Header Styles */
 #header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    min-height: 75px;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 20px 5%;
+    box-sizing: border-box;
+    height: 80px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 #header-img {
@@ -47,9 +54,22 @@ body {
     color: #2c3e50;
 }
 
-#nav-bar ul {
+nav {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 .nav-link {
@@ -221,34 +241,60 @@ footer a {
     text-decoration: none;
 }
 
-/* Media Queries */
+/* Responsive Design 
+For smaller screens, we need to adjust the layout of the header, body and footer.
+We use media queries to apply different styles based on the screen size.
+*/
 @media (max-width: 768px) {
+    body {
+        padding-top: 200px;
+    }
+
+    /* Header Styles */
     #header {
         flex-direction: column;
-        padding: 15px;
+        padding: 10px;
+        height: auto;
     }
-
-    #nav-bar ul {
-        margin-top: 15px;
-        flex-direction: column;
+    
+    .logo-container {
+        margin-bottom: 10px;
         text-align: center;
     }
-
-    .nav-link {
-        display: block;
-        padding: 10px;
+    
+    /* Navigation Styles */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
     }
 
+    /* Feature Section Styles */
     .feature {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .icon {
-        margin: 0 0 15px 0;
+        margin-bottom: 15px;
     }
 
+    /* Video Responsive */
     #video {
-        height: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Pricing Section */
+    .product {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
