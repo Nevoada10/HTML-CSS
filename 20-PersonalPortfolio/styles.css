@@ -1,3 +1,15 @@
+/*
+================================================================================
+Personal Portfolio Website CSS (Certificate Project 5)
+Author: Nevoada ( https://github.com/Nevoada10 )
+================================================================================
+
+This is my personal portfolio website that showcases my work as a software developer.
+It features a fixed navigation bar, project showcase section, and contact information.
+The website is built with responsive design principles and semantic HTML5 elements.
+
+*/
+
 /* Variables */
 :root {
     --main-blue: #e3f2fd;
@@ -65,7 +77,7 @@ header {
     align-items: center;
     background: linear-gradient(45deg, var(--main-blue), var(--accent-blue));
     color: var(--white);
-    padding: 10vh 5vw;
+    padding: 10vh 3vw;
     gap: 2vh;
 }
 
@@ -78,7 +90,6 @@ header {
 }
 
 
-
 .stats-container {
     display: flex;
     align-items: center;
@@ -89,6 +100,12 @@ header {
 
 .stats-text {
     flex: 1;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-align: center;
+    max-width: 80%;
+    margin: 2vh auto;
+    line-height: 1.6;
 }
 
 #welcome-section h1 {
@@ -195,9 +212,8 @@ header {
 }
 
 @media (max-width: 480px) {
-    #welcome-section img {
-        width: 40vw;
-        height: 40vw;
+    #welcome-section {
+        --image-size: 40vw;
     }
 
     #welcome-section h1 {
