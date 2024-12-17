@@ -89,6 +89,14 @@ header {
     transition: transform 0.3s;
 }
 
+#welcome-section p:nth-of-type(1) {
+    font-size: 1.5vw;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2vh;
+    opacity: 0.8;
+}
 
 .stats-container {
     display: flex;
@@ -96,6 +104,27 @@ header {
     gap: 2vw;
     margin-top: 2vw;
     margin-left: 0vw;
+}
+
+.stats-text {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2vh 3vw;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.stats-text:hover {
+    transform: scale(1.02);
+}
+
+.stats-text p {
+    color: var(--white);
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.1vw;
 }
 
 .stats-text {
@@ -158,6 +187,61 @@ header {
     font-size: 1.2vw;
     font-weight: 500;
     text-align: center;
+}
+
+/* Certificates Section */
+#certificates {
+    background-color: var(--main-blue);
+    padding: 6vh 3vw;
+    text-align: center;
+}
+
+#certificates h2 {
+    color: var(--dark-blue);
+    margin-bottom: 4vh;
+    font-size: 2.5vw;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2vw;
+    justify-content: center;
+}
+
+.certificate-tile {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.certificate-tile img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.certificate-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-tile:hover img {
+    transform: scale(1.1);
+}
+
+.certificate-title {
+    padding: 1vh 1vw;
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 600;
+    background-color: rgba(33, 150, 243, 0.1);
+    margin: 0;
 }
 
 /* Contact Section */
